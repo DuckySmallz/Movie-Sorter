@@ -10,4 +10,4 @@ Press the elipses, which will open up a file explorer window (should default to 
 tool sometimes gets it wrong). Then press "Add". When you have named all the files, click write. The tool should close itself and open the upload folder with your files being ready to upload to your media server, backup, or destination folder.
 
 IF RUN.BAT DOESN'T WROK!!
-change python to either py, py3, or python3. if this still doesn't work, verify you have the latest version of python installed and that it is added to your computers PATH.
+Right click 'run.bat' and select edit in notepad. Change 'python' in lines 1 and 2 to either py, py3, or python3. if this still doesn't work, verify you have the latest version of python installed and that it is added to your computers PATH.
