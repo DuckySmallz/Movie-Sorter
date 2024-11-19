@@ -20,8 +20,26 @@ def write_func():
 
 def find_file():
     global file_path
+    global file_year
+    global file_res
+    resolutions = ['720','1080','2160']
     fp = filedialog.askopenfilename(initialdir='input')
     file_path.set(fp)
+    for x in range(1990,2031):
+        if str(x) in file_path.get():
+            file_year.set(str(x))
+            break
+        else:
+            continue
+    for x in resolutions:
+        if x in file_path.get():
+            if x == '720' or x == '1080':
+                file_res.set(f'{x}p')
+                break
+            else:
+                file_res.set('4K')
+                break
+
 
 def add_func():
     global file_loader
